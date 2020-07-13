@@ -20,5 +20,6 @@ from globalabs.core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<nome>/', views.hello)
+    path('hello/<nome>/', views.hello),
+    path('<operacao>/<int:num1>/<int:num2>', views.calculadora)
 ]
